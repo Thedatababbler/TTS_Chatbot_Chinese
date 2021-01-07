@@ -32,9 +32,9 @@ class TacotronSynthesizer(BaseSynthesizer):
             targets_length=None,
             stop_token_targets=None)
 
-    def make_feed_dict(self, label_filename):
+    def make_feed_dict(self, text):
         hparams = self.hparams
-        new_text = self.pause.add_pause(self.text)#text_cut(self.text)
+        new_text = self.pause.add_pause(text)#text_cut(self.text)
         new_text = new_text.replace('，','')
         new_text = new_text.replace('！','')
         new_text = new_text.replace('。','')

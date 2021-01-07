@@ -49,10 +49,10 @@ class BaseSynthesizer():
         raise NotImplementedError(
             "You must implement your own make_feed_dict function.")
 
-    def __call__(self, label_filename):
+    def __call__(self, label_filename, text):
         hparams = self.hparams
-        file_id = 'test'#os.path.splitext(os.path.basename(label_filename))[0]
-        feed_dict = self.make_feed_dict(label_filename)
+        file_id = label_filename#os.path.splitext(os.path.basename(label_filename))[0]
+        feed_dict = self.make_feed_dict(text)
 
         generated_acoustic = self.session.run(
             self.outputs, feed_dict=feed_dict)

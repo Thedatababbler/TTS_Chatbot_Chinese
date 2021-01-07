@@ -18,14 +18,14 @@ class Synthesizer():
         self.args = args
         self.synthesizer = eval(hparams.synthesizer_type)(hparams, args)
 
-    def __call__(self):
+    def __call__(self, text):
         #labels = [fp for fp in glob.glob(
         #    os.path.join(self.args.label_dir, '*'))]
         #for i, label_filename in enumerate(tqdm(labels)):
         label_filename = 'test'
         start = time.time()
 
-        generated_acoustic, acoustic_filename = self.synthesizer(label_filename)
+        generated_acoustic, acoustic_filename = self.synthesizer(label_filename, text)
         #if generated_acoustic is None:
         #    print("Ignore {}".format(os.path.basename(label_filename)))
         #    continue
