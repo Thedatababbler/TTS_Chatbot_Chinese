@@ -234,8 +234,17 @@ def get_pyin(text, tone=True):
         
         i += 1
     res = ' '.join(res)
-    res = res.replace('w ', 'u')
+    res = res.replace('y u', 'v')
+    res = res.replace('q u', 'q v')
+    res = res.replace('j u', 'j v')
     res = res.replace('y ', 'i')
+    res = res.replace('ue', 've')
+    res = res.replace('vei', 'uei')
+    res = res.replace('ven', 'uen')
+    res = res.replace('veng', 'ueng')
+    res = res.replace('ua', 'va')
+    res = res.replace('w ', 'u')
+    res = res.replace('uu', 'u')
     res = res.replace('ii', 'i')
     #print('$$'*7,res)
     return res, text
@@ -261,10 +270,12 @@ def text_cut(text):
 
             
 if __name__ == '__main__':
-    text = '大写字母用于随机变量，而小写字母用于随机变量的具体值或标量函数。'
-    text = '如果打穿地球，那么从一头到另一头会发生什么？'
-    text = text_cut(text)
-    print(text)
-    pyin, txt = get_pyin(text)
-    print(pyin)
-    print(txt)
+    while True:
+        #text = '大写字母用于随机变量，而小写字母用于随机变量的具体值或标量函数。'
+        #text = '如果打穿地球，那么从一头到另一头会发生什么？'
+        text = input()
+        text = text_cut(text)
+        print(text)
+        pyin, txt = get_pyin(text)
+        print(pyin)
+        print(txt)

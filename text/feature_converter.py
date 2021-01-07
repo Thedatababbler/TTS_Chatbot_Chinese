@@ -21,7 +21,7 @@ def label_to_sequence(label):
 def label_to_sequence2(pyin):
     phones = []
     pyin = pyin.split(' ')
-    #print(pyin)
+    print(pyin)
     for item in pyin:
         #print('item: ', item)
         if item not in phone_to_id.keys():
