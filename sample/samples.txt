@@ -1,0 +1,17 @@
+聊天记录2020-10-07 10:00:50.434475:
+user:干嘛啊？
+chatbot:我在想你
+user:讨厌，说正经的
+chatbot:你这个人真是讨厌，不能说出来啊，哈哈哈哈哈
+user:你作业写完吗
+chatbot:作业是什么?
+user:数学作业阿
+chatbot:为什么这么拽
+user:你到底写完作业没有
+chatbot:作业还没写完的那我选吧
+user:借我看看
+chatbot:好的
+user:了，今天放学和你一起回家的那个女生是啊
+chatbot:她也是
+user:是什么？
+chatbot:我今天回家了你回去吗？
