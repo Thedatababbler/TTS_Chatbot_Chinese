@@ -233,6 +233,8 @@ def get_pyin(text, tone=True):
             res.append(t)
         
         i += 1
+    res.append('sil')
+    res.insert(0, 'sil')
     res = ' '.join(res)
     res = res.replace('y u', 'v')
     res = res.replace('q u', 'q v')

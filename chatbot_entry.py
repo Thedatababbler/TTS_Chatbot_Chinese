@@ -131,7 +131,7 @@ def prepare_generate_voice(args, flag):
     #    os.makedirs(args.alignment_dir, exist_ok=True)
 
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-    tf.compat.v1.logging.set_verbosity(tf.logging.ERROR)
+    tf.logging.set_verbosity(tf.logging.ERROR)
     synthesizer = Synthesizer(hparams, args)
     #synthesizer()
     return synthesizer
