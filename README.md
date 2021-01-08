@@ -31,13 +31,14 @@ python3.6、 transformers==1.12、pytorch==1.3.1，其他环境要求请见requi
 
 
 ## 模型参数
-- log_dir: 用于存放tacotron模型训练好的权重（等待上传）
-- dialogue_model: 对话模型训练好的权重（等待上传）
-- mmi_model：对话模型训练好的权重（等待上传）
+下载models.7z文件，并将解压后的三个文件夹全部放入项目根目录里面
+- log_dir: 用于存放tacotron模型训练好的权重
+- dialogue_model: 对话模型训练好的权重
+- mmi_model：对话模型训练好的权重
 
 
 ## 使用说明
-clone该项目到本地后将训练好的模型权重（待上传）下载到本地并放入对应目录下，运行python -W ignore chatbot_entry.py即可使用对话机器人语音生成一体化程序。只要输入中文文字即可听到语音合成的回答。
+clone该项目到本地后将训练好的模型权重（models.7z）下载到本地并放入对应目录下，运行python -W ignore chatbot_entry.py即可使用对话机器人语音生成一体化程序。只要输入中文文字即可听到语音合成的回答。
 
 
 ## TODO
